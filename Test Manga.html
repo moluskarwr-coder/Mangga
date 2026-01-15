@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Manga Collection</title>
+    <style>
+        /* Reset dan font modern */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        .manga-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .manga-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .manga-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+        .manga-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .manga-info {
+            padding: 20px;
+        }
+        .manga-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .manga-info p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff5252;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        /* Responsif */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .manga-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime Manga Collection</h1>
+        <p>Pilih manga favoritmu dengan tema anime kekinian!</p>
+    </header>
+    <div class="container">
+        <div class="manga-grid">
+            <div class="manga-card">
+                <img src="Naruto.jpg" alt="Naruto">
+                <div class="manga-info">
+                    <h3>Naruto</h3>
+                    <p>Cerita tentang ninja muda yang ingin menjadi Hokage. Penuh aksi dan persahabatan!</p>
+                    <a href="Isi Naruto.html" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+            <div class="manga-card">
+                <img src="One Piece.jpg" alt="One Piece">
+                <div class="manga-info">
+                    <h3>One Piece</h3>
+                    <p>Pertualangan Luffy dan kru bajak lautnya mencari harta karun terbesar.</p>
+                    <a href="#" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+            <div class="manga-card">
+                <img src="AOT.jpg" alt="Attack on Titan">
+                <div class="manga-info">
+                    <h3>Attack on Titan</h3>
+                    <p>Perjuangan melawan raksasa manusia dalam dunia dystopian yang epik.</p>
+                    <a href="Isi AOT.html" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+            <div class="manga-card">
+                <img src="Kimetsu-no-yaiba.jpg" alt="Demon Slayer">
+                <div class="manga-info">
+                    <h3>Demon Slayer</h3>
+                    <p>Tanjiro berjuang melawan iblis untuk menyelamatkan keluarganya.</p>
+                    <a href="#" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+            <div class="manga-card">
+                <img src="My Hero Academia.jpg" alt="My Hero Academia">
+                <div class="manga-info">
+                    <h3>My Hero Academia</h3>
+                    <p>Dunia pahlawan super di mana Izuku ingin menjadi pahlawan terhebat.</p>
+                    <a href="Attack on Titan.html" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+            <div class="manga-card">
+                <img src="Death Note.jpg" alt="Death Note">
+                <div class="manga-info">
+                    <h3>Death Note</h3>
+                    <p>Light Yagami menemukan buku yang bisa membunuh siapa saja yang namanya ditulis.</p>
+                    <a href="#" class="btn">Baca Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Anime Manga Collection. Dibuat oleh KyBay.</p>
+    </footer>   
+</body>
+</html>
